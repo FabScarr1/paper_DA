@@ -1,9 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Fri Dec 15 18:43:31 2023
-
-@author: f_sca
-"""
 
 import torch
 import numpy as np
