@@ -1,0 +1,12 @@
+python gen_split.py --data_path=/fs_part1/phd/data/Modern-Office-31/webcam --num_classes=31 --random_state=1
+
+python gen_embs.py --embs_path=tmp_data --num_classes=31 --strat=N1
+
+
+--------------
+python inout_fcl.py --data_path_dom1=/fs_part1/phd/mo31/gen_data/domAmazon --data_path_dom2=/fs_part1/phd/mo31/gen_data/domSynthetic --num_classes=31 --print_pos=1 --perc_ep=0.1
+python inout_fcl.py --data_path_dom1=/fs_part1/phd/mo31/gen_data/domAmazon --data_path_dom2=/fs_part1/phd/mo31/gen_data/domSynthetic --num_classes=31 --print_pos=1 --perc_ep=0.2
+
+    data_dir = opt.data_path_dom1+'/N'+rs+'/'
+    #'/fs_part1/phd/mo31/gen_data/domSynthetic
+    data_dir1 = opt.data_path_dom1+'/N'+rs+'/'
